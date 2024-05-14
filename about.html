@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>About Us</title>
+    <style>
+        .bg-grey {
+          background-color: #f6f6f6;
+        }
+        .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+    }
+    
+    .logo {
+      color: #f4511e;
+      font-size: 200px;
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+    }
+    .container-fluid {
+      padding: 60px 50px;
+    }
+    ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(252, 166, 86);
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid-1">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="first.html">FUTURE TIMER</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="first.html">Home</a></li>
+            <li><a href="calendar.html">Calender </a></li>
+            <li  class="active"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <center><h1 style="background-color: lavender;width: fit-content;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:50px;">Meet Our Team.</h1></center>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4" >
+          <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Vatsal</h1>
+            <p>BE-CSE </p>
+            <p>2310991160</p>
+            <b><p><a href="http://www.linkedin.com/in/vatsal-jain-07522928b" >Linkedin</a></p></b>
+          </div>
+        </div>
+      </div></div>
+          <div class="col-sm-4" >
+          <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Vibhu</h1>
+            <p>BE-CSE</p>
+            <p>2310991161</p>
+            <b><p><a href="https://www.linkedin.com/in/vibhu-41a482156" >Linkedin</a></p></b>
+          </div>
+        </div>
+      </div></div>
+          <div class="col-sm-4" ><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Vivek</h1>
+            <p>BE-CSE</p>
+            <p>2310991163</p>
+            <b><p><a href="https://www.linkedin.com/in/vivek-chaudhary-0670a727a" >Linkedin</a></p></b>
+          </div>
+        </div>
+      </div></div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="container-fluid bg-grey">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2><a href="about.html"> About Us</a></h2>
+           <h4></h4>
+           <p></p>
+            <button class="btn btn-default btn-lg" >
+                <a href="response.html">Response</a></button>
+          </div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
